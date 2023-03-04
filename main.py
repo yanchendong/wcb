@@ -2,7 +2,7 @@
 from wxpy import *
 from ct import res
  
-bot = Bot(cache_path=True)
+bot = Bot(cache_path=True,console_qr=1)
 name = input("针对谁？")
 myfriend = bot.friends().search(u"{}".format(name))[0]
 @bot.register(myfriend, TEXT)
